@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recart Frontend Test</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+	{{!-- <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script> --}}
+</head>
+<body>
+	<section class="hero is-medium is-info is-bold">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">
+					Welcome to Recar
+				</h1>
+				<h2 class="subtitle">
+					Frontend Test
+				</h2>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="content">
+				<h1>Dear programer</h1>
+				<p>Here is a quick coding challenge. We tried to make it as simple as possible so we could see how you write code, solve problems and most importantly - how you THINK.</p>
+				<p>We have a simple API that connects to database. Use HTML, CSS and Javascript to create, read, update, delete parts from the API and display it in an organized way.  In addition, you should add in some sort of sorting, filter mechanic to the front-end. Feel free to use any frameworks you would like to achieve the task. Be creative!</p>
+				<p>Oh! One more thing – you have to send <code>Authorization: RecarSecretTokenOMG</code> header to access the data.</p>
+				<blockquote>
+					jQuery knowledge is a good, but try not to use in this project. Swap it with native Javascript or framework (VueJS, React, Pollymer and etc.). If it's only for ajax calls, try to use axios as HTTP client.
+				</blockquote>
+  				<h3>We would like to see, but not required:</h3>
+				<ol>
+					<li>ECMAScript 6</li>
+					<li>SCSS</li>
+					<li>VueJS + Vuex</li>
+					<li>Vue Router (optional)</li>
+					<li>Axios</li>
+				</ol>
+
+				<h3>Know what is:</h3>
+				<ol>
+					<li>0Auth2.0</li>
+					<li>RESTful API</li>
+					<li>BEM</li>
+					<li>Webpack</li>
+					<li>NodeJS</li>
+					<li>Npm | Yarn</li>
+					<li>Agile</li>
+					<li>Git</li>
+				</ol>
+				
+				<h3>API Routes:</h3>
+				<table class="table table is-bordered is-striped is-narrow is-fullwidth">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Method</th>
+						<th scope="col">Path</th>
+					</tr>
+				</thead>
+				<tbody>
+				{{#list}}
+					<tr>
+						<td>{{ @index }}</td>
+						<td>{{ methods }}</td>
+						<td>{{ path }}</td>
+					</tr>
+				{{/list}}
+				</tbody>
+			</table>
+			<article class="message">
+				<div class="message-body">
+					If something went wrong and you would like to <strong>reset database</strong>, run one of commands: </br></br>
+					<code>yarn reset || npm run reset</code>
+				</div>
+			</article>
+				
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+		&copy; 2018
+      <a href="https://recar.lt">Recar</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
