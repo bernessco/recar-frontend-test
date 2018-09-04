@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const express = require('express');
 const engine = require('consolidate');
+const cors = require('cors');
 
 const app = express();
 const utils = require('./utils');
@@ -14,6 +15,7 @@ const listEndpoints = require('express-list-endpoints');
 portfinder.basePort = 5000;
 dotenv.config();
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
