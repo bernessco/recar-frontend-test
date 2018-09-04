@@ -19,7 +19,7 @@ const CarPartSchema = new Schema({
         required: [true, 'Car part model is required.']
     },
     year: {
-        type: Date,
+        type: Number,
         required: [true, 'Car part year is required.']
     },
     color: {
