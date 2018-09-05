@@ -10,7 +10,7 @@ If you are using Yarn:
 4. Run app: `yarn serve`.
 
 If you are using NPM:
-1. Install all packages: `npm run install`.
+1. Install all packages: `npm install`.
 2. Setup app: `npm run setup` and fill `.env` file with given data.
 3. Seed database: `npm run seed`.
 4. Run app: `npm run serve`.
